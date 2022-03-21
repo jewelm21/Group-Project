@@ -2,32 +2,34 @@ classdef PlayersGridScript < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
-        Characters      matlab.ui.Figure
-        Olaff           matlab.ui.control.Button
-        Hanz            matlab.ui.control.Button
-        Kristoff        matlab.ui.control.Button
-        Elsa            matlab.ui.control.Button
-        Anna            matlab.ui.control.Button
-        Abuela          matlab.ui.control.Button
-        Luisa           matlab.ui.control.Button
-        Bruno           matlab.ui.control.Button
-        Isabella        matlab.ui.control.Button
-        Mirabel         matlab.ui.control.Button
-        Silvermist      matlab.ui.control.Button
-        TinkerBell      matlab.ui.control.Button
-        Rosetta         matlab.ui.control.Button
-        Iridessa        matlab.ui.control.Button
-        Videa           matlab.ui.control.Button
-        Woody           matlab.ui.control.Button
-        MrPotatoHead    matlab.ui.control.Button
-        Buzz_Lightyear  matlab.ui.control.Button
-        Jessie          matlab.ui.control.Button
-        Slinky          matlab.ui.control.Button
-        Merida          matlab.ui.control.Button
-        Jasmine         matlab.ui.control.Button
-        Rapunzel        matlab.ui.control.Button
-        Snow_White      matlab.ui.control.Button
-        Cinderella      matlab.ui.control.Button
+        Characters          matlab.ui.Figure
+        YOURCHARACTERLabel  matlab.ui.control.Label
+        Image               matlab.ui.control.Image
+        Olaff               matlab.ui.control.Button
+        Hanz                matlab.ui.control.Button
+        Kristoff            matlab.ui.control.Button
+        Elsa                matlab.ui.control.Button
+        Anna                matlab.ui.control.Button
+        Abuela              matlab.ui.control.Button
+        Luisa               matlab.ui.control.Button
+        Bruno               matlab.ui.control.Button
+        Isabella            matlab.ui.control.Button
+        Mirabel             matlab.ui.control.Button
+        Silvermist          matlab.ui.control.Button
+        TinkerBell          matlab.ui.control.Button
+        Rosetta             matlab.ui.control.Button
+        Iridessa            matlab.ui.control.Button
+        Videa               matlab.ui.control.Button
+        Woody               matlab.ui.control.Button
+        MrPotatoHead        matlab.ui.control.Button
+        Buzz_Lightyear      matlab.ui.control.Button
+        Jessie              matlab.ui.control.Button
+        Slinky              matlab.ui.control.Button
+        Merida              matlab.ui.control.Button
+        Jasmine             matlab.ui.control.Button
+        Rapunzel            matlab.ui.control.Button
+        Snow_White          matlab.ui.control.Button
+        Cinderella          matlab.ui.control.Button
     end
 
 
@@ -119,7 +121,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
                 app.Buzz_Lightyear.Icon = '';
             else
                 app.Buzz_Lightyear.BackgroundColor = [0.1804 0.3294 0.5686];
-                app.Buzz_Lightyear.Icon = 'BuzzEdit2.png';
+                app.Buzz_Lightyear.Icon = 'BuzzEdit2.png.png';
             end
         end
 
@@ -320,7 +322,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Characters and hide until all components are created
             app.Characters = uifigure('Visible', 'off');
             app.Characters.Color = [0.149 0.149 0.149];
-            app.Characters.Position = [100 100 809 675];
+            app.Characters.Position = [100 100 1119 675];
             app.Characters.Name = 'MATLAB App';
 
             % Create Cinderella
@@ -523,6 +525,72 @@ classdef PlayersGridScript < matlab.apps.AppBase
             app.Olaff.BackgroundColor = [0.1216 0.7882 1];
             app.Olaff.Position = [661 28 131 108];
             app.Olaff.Text = '';
+
+            % Create Image
+            app.Image = uiimage(app.Characters);
+            app.Image.Position = [851 211 223 207];
+
+            run("PlayerDirectory.m")
+            if Players_character == 1
+                app.Image.ImageSource = 'CinderellaEdit3.png';
+            elseif Players_character == 2
+                app.Image.ImageSource = 'SnowWhiteEdit.png';
+            elseif Players_character == 3
+                app.Image.ImageSource = 'RapunzelEdit.png';
+            elseif Players_character == 4
+                app.Image.ImageSource = 'JasmineEdit3.png';
+            elseif Players_character == 5
+                app.Image.ImageSource = 'MeridaEdit2.png';
+            elseif Players_character == 6
+                app.Image.ImageSource = 'SlinkyEdit.png';
+            elseif Players_character == 7
+                app.Image.ImageSource = 'JessieEdit.png';
+            elseif Players_character == 8
+                app.Image.ImageSource = 'BuzzEdit2.png';
+            elseif Players_character == 9
+                app.Image.ImageSource = 'PotatoEdit.png';
+            elseif Players_character == 10
+                app.Image.ImageSource = 'WoodyEdit.png';
+            elseif Players_character == 11
+                app.Image.ImageSource = 'VidiaEdit.png';
+            elseif Players_character == 12
+                app.Image.ImageSource = 'IridessaEdit2.png';
+            elseif Players_character == 13
+                app.Image.ImageSource = 'RosettaEdit.png';
+            elseif Players_character == 14
+                app.Image.ImageSource = 'TinkerbellEdit.png';
+            elseif Players_character == 15
+                app.Image.ImageSource = 'SilvermistEdit.png';
+            elseif Players_character == 16
+                app.Image.ImageSource = 'MirabelEdit.png';
+            elseif Players_character == 17
+                app.Image.ImageSource = 'IsabellaEdit.png';
+            elseif Players_character == 18
+                app.Image.ImageSource = 'BrunoEdit.png';
+            elseif Players_character == 19
+                app.Image.ImageSource = 'LuisaEdit.png';
+            elseif Players_character == 20
+                app.Image.ImageSource = 'AbueliteEdit.png';
+            elseif Players_character == 21
+                app.Image.ImageSource = 'AnnaEdit.png';
+            elseif Players_character == 22
+                app.Image.ImageSource = 'KristoffEdit.png';
+            elseif Players_character == 23
+                app.Image.ImageSource = 'HansEdit.png';
+            elseif Players_character == 24
+                app.Image.ImageSource = 'ElsaEdit.png';
+            elseif Players_character == 25
+                app.Image.ImageSource = 'OlafEdit.png';
+            end
+
+
+            % Create YOURCHARACTERLabel
+            app.YOURCHARACTERLabel = uilabel(app.Characters);
+            app.YOURCHARACTERLabel.FontSize = 25;
+            app.YOURCHARACTERLabel.FontWeight = 'bold';
+            app.YOURCHARACTERLabel.FontColor = [1 1 1];
+            app.YOURCHARACTERLabel.Position = [840 438 245 33];
+            app.YOURCHARACTERLabel.Text = 'YOUR CHARACTER';
 
             % Show the figure after all components are created
             app.Characters.Visible = 'on';
