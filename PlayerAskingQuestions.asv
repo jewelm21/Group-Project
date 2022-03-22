@@ -1,5 +1,5 @@
 app = PlayersGridScript;
-
+a = 1;
 index = randi(25);
 ans_mat = [
     ["Cinderella" 0 1 0 1 1 0 0 0 0 1 0];
@@ -24,12 +24,10 @@ ans_mat = [
     ["Abuela" 0 1 0 0 0 1 0 0 0 0 0];
     ["Anna" 0 1 0 0 1 0 0 0 0 1 0];
     ["Kristoff" 1 0 0 0 0];
-    ["Hanz" 1 1 0 0 1 0 0 0 1 0 0];
-    ["Olaff" 1 0 1 0 0 1 0 1 1 0 0];
+    ["Hanz"];
+    ["Olaff"];
     ["Elsa" 0 1 0 0 1 0 1 0 0 0 0]
 ];
-
-a = 1;
 while a > 0
     disp('1. Is your character a male?')
     disp('2. Is your character a humanoid?')
