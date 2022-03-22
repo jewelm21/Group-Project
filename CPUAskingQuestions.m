@@ -20,6 +20,7 @@ if x ==1
             gw(4,4)=0;
             gw(5,3:5)=0;
         else
+            
         end
 elseif x==2
     disp('Please answer using "true" or "false".')
