@@ -7,8 +7,9 @@ run("CPUAskingQuestions.m")
 
 if final_count == 1
         [r,c]=find(gw);
-        CharacterPosition = Grid(r,c);
-        disp(Computers_Final_Answer)
+        CharacterPosition = r*c;
+        Computers_Final_Answer = ans_mat(CharacterPosition, 1);
+        disp('Your Character is'); disp(Computers_Final_Answer);
         return
     else
         continue
