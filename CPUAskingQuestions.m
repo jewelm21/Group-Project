@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 classdef CPUAskingQuestions < handle
     properties (Access = public)
         gw = [
@@ -43,6 +44,60 @@ classdef CPUAskingQuestions < handle
             "Does your character have a prominent love interest? \n";
             "Does your character have wings? \n"
         ];
+=======
+male = 'Is your character a male?';
+human = 'Is your character a humanoid?';
+dark_hair = 'Does your character have dark hair?';
+head_piece = 'Does your character have a head accessory?';
+caucasian ='Is your character caucasian?';
+dark_eyes = 'Does your character have brown or dark eyes?';
+powers = 'Does your character posess magic or powers?';
+comedy = 'Is your character used primarily for comedic relief?';
+side_character = 'Is your character considered a side character?';
+love_interest = 'Does your character have a prominent love interest?';
+
+
+x = randi(10);
+if x ==1 
+    disp('Please answer using "true" or "false".')
+    male = input(male);
+        if (male==false) 
+            gw(2,1:2)= 0;
+            gw(2,3:4)=0;
+            gw(4,4)=0;
+            gw(5,3:5)=0;
+        elseif (male==true) 
+    gw(1,:)= 0;
+    gw(2,3)=0;
+    gw(3,:)=0;
+    gw(4,1:3)=0;
+    gw(4,5)=0;
+    gw(5,1:2)=0;
+
+        end
+elseif x==2
+    disp('Please answer using "true" or "false".')
+    human = input(human);
+        if (human==false)
+            gw(1,:)=0;
+            gw(2,1)=0;
+            gw(2,3:4)=0;
+            gw(3:4,:)=0;
+            gw(5,1:4)=0;
+        end
+elseif x==3
+    disp('Please answer using "true" or "false".')
+    dark_hair = input(dark_hair);
+    if (dark_hair==false)
+            gw(1,2)=0;
+            gw(1,5)=0;
+            gw(2,1)=0;
+            gw(2,5)=0;
+            gw(3,1:3)=0;
+            gw(4,1:2)=0;
+            gw(4,4:5)=0;
+            gw(5,5)=0;
+>>>>>>> Stashed changes
     end
 
     methods(Static)
