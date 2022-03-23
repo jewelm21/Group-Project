@@ -88,7 +88,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
                 app.Merida.Icon = '';
             else
                 app.Merida.BackgroundColor = [0.9216 0.5804 0.6392];
-                app.Merida.Icon = 'MeridaNumEdit.png';
+                app.Merida.Icon = 'MeridaEdit2.png';
             end
         end
 
@@ -361,7 +361,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Merida
             app.Merida = uibutton(app.Characters, 'push');
             app.Merida.ButtonPushedFcn = createCallbackFcn(app, @MeridaButtonPushed, true);
-            app.Merida.Icon = 'MeridaNumEdit.png';
+            app.Merida.Icon = 'Meridanum3.png';
             app.Merida.BackgroundColor = [0.9216 0.5804 0.6392];
             app.Merida.Position = [341 549 131 107];
             app.Merida.Text = '';
@@ -433,7 +433,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create TinkerBell
             app.TinkerBell = uibutton(app.Characters, 'push');
             app.TinkerBell.ButtonPushedFcn = createCallbackFcn(app, @TinkerBellButtonPushed, true);
-            app.TinkerBell.Icon = 'TinkerbellNumEdit.png';
+            app.TinkerBell.Icon = 'TinkerbellEdit.png';
             app.TinkerBell.BackgroundColor = [0.2314 0.5804 0.2784];
             app.TinkerBell.Position = [661 286 129 110];
             app.TinkerBell.Text = '';
@@ -441,7 +441,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Silvermist
             app.Silvermist = uibutton(app.Characters, 'push');
             app.Silvermist.ButtonPushedFcn = createCallbackFcn(app, @SilvermistButtonPushed, true);
-            app.Silvermist.Icon = 'SilvermistNumEdit.png';
+            app.Silvermist.Icon = 'SilvermistEdit.png';
             app.Silvermist.BackgroundColor = [0.2314 0.5804 0.2784];
             app.Silvermist.Position = [21 288 131 108];
             app.Silvermist.Text = '';
@@ -449,7 +449,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Mirabel
             app.Mirabel = uibutton(app.Characters, 'push');
             app.Mirabel.ButtonPushedFcn = createCallbackFcn(app, @MirabelButtonPushed, true);
-            app.Mirabel.Icon = 'Mirabelnum3.png';
+            app.Mirabel.Icon = 'MirabelEdit.png';
             app.Mirabel.BackgroundColor = [0.6118 0.0392 0.0392];
             app.Mirabel.Position = [181 157 131 109];
             app.Mirabel.Text = '';
@@ -457,7 +457,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Isabella
             app.Isabella = uibutton(app.Characters, 'push');
             app.Isabella.ButtonPushedFcn = createCallbackFcn(app, @IsabellaButtonPushed, true);
-            app.Isabella.Icon = 'Isabellanum3.png';
+            app.Isabella.Icon = 'IsabellaEdit.png';
             app.Isabella.BackgroundColor = [0.6118 0.0392 0.0392];
             app.Isabella.Position = [21 156 129 110];
             app.Isabella.Text = '';
@@ -465,7 +465,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Bruno
             app.Bruno = uibutton(app.Characters, 'push');
             app.Bruno.ButtonPushedFcn = createCallbackFcn(app, @BrunoButtonPushed, true);
-            app.Bruno.Icon = 'BrunoNumEdit.png';
+            app.Bruno.Icon = 'BrunoEdit.png';
             app.Bruno.BackgroundColor = [0.6118 0.0392 0.0392];
             app.Bruno.Position = [501 157 131 109];
             app.Bruno.Text = '';
@@ -473,7 +473,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Luisa
             app.Luisa = uibutton(app.Characters, 'push');
             app.Luisa.ButtonPushedFcn = createCallbackFcn(app, @LuisaButtonPushed, true);
-            app.Luisa.Icon = 'Luisanum3.png';
+            app.Luisa.Icon = 'LuisaEdit.png';
             app.Luisa.BackgroundColor = [0.6118 0.0392 0.0392];
             app.Luisa.Position = [661 156 129 110];
             app.Luisa.Text = '';
@@ -481,7 +481,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Abuela
             app.Abuela = uibutton(app.Characters, 'push');
             app.Abuela.ButtonPushedFcn = createCallbackFcn(app, @AbuelaButtonPushed, true);
-            app.Abuela.Icon = 'AbuelaNumEdit.png';
+            app.Abuela.Icon = 'AbueliteEdit.png';
             app.Abuela.BackgroundColor = [0.6118 0.0392 0.0392];
             app.Abuela.Position = [341 158 131 108];
             app.Abuela.Text = '';
@@ -489,7 +489,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Anna
             app.Anna = uibutton(app.Characters, 'push');
             app.Anna.ButtonPushedFcn = createCallbackFcn(app, @AnnaButtonPushed, true);
-            app.Anna.Icon = 'AnnaNumEdit.png';
+            app.Anna.Icon = 'AnnaEdit.png';
             app.Anna.BackgroundColor = [0.1216 0.7882 1];
             app.Anna.Position = [21 26 129 110];
             app.Anna.Text = '';
@@ -497,7 +497,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Elsa
             app.Elsa = uibutton(app.Characters, 'push');
             app.Elsa.ButtonPushedFcn = createCallbackFcn(app, @ElsaButtonPushed, true);
-            app.Elsa.Icon = 'ElsaNumEdit.png';
+            app.Elsa.Icon = 'ElsaEdit.png';
             app.Elsa.BackgroundColor = [0.1216 0.7882 1];
             app.Elsa.Position = [181 26 129 110];
             app.Elsa.Text = '';
@@ -505,7 +505,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Kristoff
             app.Kristoff = uibutton(app.Characters, 'push');
             app.Kristoff.ButtonPushedFcn = createCallbackFcn(app, @KristoffButtonPushed, true);
-            app.Kristoff.Icon = 'Kristoffnum3.png';
+            app.Kristoff.Icon = 'KristoffEdit.png';
             app.Kristoff.BackgroundColor = [0.1216 0.7882 1];
             app.Kristoff.Position = [501 26 129 110];
             app.Kristoff.Text = '';
@@ -513,7 +513,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Hanz
             app.Hanz = uibutton(app.Characters, 'push');
             app.Hanz.ButtonPushedFcn = createCallbackFcn(app, @HanzButtonPushed, true);
-            app.Hanz.Icon = 'HansNumEdit.png';
+            app.Hanz.Icon = 'HansEdit.png';
             app.Hanz.BackgroundColor = [0.1216 0.7882 1];
             app.Hanz.Position = [341 26 129 110];
             app.Hanz.Text = '';
@@ -521,7 +521,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Olaff
             app.Olaff = uibutton(app.Characters, 'push');
             app.Olaff.ButtonPushedFcn = createCallbackFcn(app, @OlaffButtonPushed, true);
-            app.Olaff.Icon = 'OlafNum3.png';
+            app.Olaff.Icon = 'OlafEdit.png';
             app.Olaff.BackgroundColor = [0.1216 0.7882 1];
             app.Olaff.Position = [661 28 131 108];
             app.Olaff.Text = '';
