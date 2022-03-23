@@ -530,7 +530,34 @@ classdef PlayersGridScript < matlab.apps.AppBase
             app.Image = uiimage(app.Characters);
             app.Image.Position = [851 211 223 207];
 
-            run("PlayerDirectory.m")
+            disp('1. Cinderella')
+            disp('2. Snow White')
+            disp('3. Rapunzel')
+            disp('4. Jasmine')
+            disp('5. Merida')
+            disp('6. Slinky')
+            disp('7. Jessie')
+            disp('8. Buzz Lightyear')
+            disp('9. Mr Potato Head')
+            disp('10. Woody')
+            disp('11. Vidia')
+            disp('12. Iridessa')
+            disp('13. Rosetta')
+            disp('14. Tinkerbell')
+            disp('15. Silvermis')
+            disp('16. Mirabel')
+            disp('17. Isabella')
+            disp('18. Bruno')
+            disp('19. Luisa')
+            disp('20. Abuelita')
+            disp('21. Anna')
+            disp('22. Kristoff')
+            disp('23. Hans')
+            disp('24. Elsa')
+            disp('25. Olaff')
+    
+            Players_character = input('Choose your character by typing their corresponding number.\n');
+
             if Players_character == 1
                 app.Image.ImageSource = 'CinderellaEdit3.png';
             elseif Players_character == 2
