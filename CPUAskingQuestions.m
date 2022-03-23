@@ -1,3 +1,6 @@
+
+
+%Questions that the computer will choose from
 male = 'Is your character a male? ';
 human = 'Is your character a humanoid? ';
 dark_hair = 'Does your character have dark hair? ';
@@ -8,9 +11,9 @@ powers = 'Does your character posess magic or powers? ';
 comedy = 'Is your character used primarily for comedic relief? ';
 side_character = 'Is your character considered a side character? ';
 love_interest = 'Does your character have a prominent love interest? ';
+wings = 'Does your character have wings? ';
 
-
-x = randi(10);
+x = randi(11);  %the computer will randomly choose between 1 and 11 and ask the corresponding question
 if x ==1 
     disp('Please answer using "true" or "false".')
     male = input(male);
@@ -20,7 +23,7 @@ if x ==1
             gw(4,4)=0;
             gw(5,3:5)=0;
         else
-            
+            %True version goes here
         end
 elseif x==2
     disp('Please answer using "true" or "false".')
@@ -31,6 +34,8 @@ elseif x==2
             gw(2,3:4)=0;
             gw(3:4,:)=0;
             gw(5,1:4)=0;
+        else
+            %True version goes here
         end
 elseif x==3
     disp('Please answer using "true" or "false".')
@@ -44,6 +49,8 @@ elseif x==3
             gw(4,1:2)=0;
             gw(4,4:5)=0;
             gw(5,5)=0;
+    else
+            %True version goes here
     end
 
 elseif x==4
@@ -57,6 +64,8 @@ elseif x==4
         gw(2,5)=0;
         gw(3,2:3)=0;
         gw(4,5)=0;
+    else
+            %True version goes here
     end
 elseif x==5
     disp('Please answer using "true" or "false".')
@@ -68,6 +77,8 @@ elseif x==5
         gw(3,1:2)=0;
         gw(3,4:5)=0;
         gw(5,1:4)=0;
+    else
+            %True version goes here
     end
 elseif x==6
     disp('Please answer using "true" or "false".')
@@ -81,6 +92,8 @@ elseif x==6
         gw(3,3)=0;
         gw(4,:)=0;
         gw(5,4:5)=0;
+    else
+            %True version goes here
     end
 
 elseif x==7
@@ -92,6 +105,8 @@ elseif x==7
         gw(4,1)=0;
         gw(4,4:5)=0;
         gw(5,2)=0;
+    else
+            %True version goes here
     end
 elseif x==8
     disp('Please answer using "true" or "false".')
@@ -99,6 +114,8 @@ elseif x==8
     if(comedy==false)
         gw(2,5)=0;
         gw(5,5)=0;
+    else
+            %True version goes here
     end
 elseif x==9
     disp('Please answer using "true" or "false".')
@@ -112,6 +129,8 @@ elseif x==9
         gw(4,3)=0;
         gw(4,5)=0;
         gw(5,3:5)=0;
+    else
+            %True version goes here
     end
 elseif x==10
     disp('Please answer using "true" or "false".')
@@ -124,9 +143,17 @@ elseif x==10
         gw(3,5)=0;
         gw(5,1)=0;
         gw(5,4)=0;
+    else
+            %True version goes here
     end
+elseif x== 11
+    disp('Please answer using "true" or "false".')
+    wings = input(wings);
+
+    %code for false and true goes here
 end
 
-
+% The following counts how many number 1s are left in the gw matrix
+% Once there is only one '1' left, the code in the main file will run
 number_of_1 = find(gw==1);
 final_count = length(number_of_1);
