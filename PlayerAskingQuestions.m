@@ -1,34 +1,42 @@
+% get access to PlayesGridScript.m
 app = PlayersGridScript;
 
+
+% Create a matrix of the 25 characters and their properties,
+% and let the computer randomly generate a character for the player to
+% guess.
 index = randi(25);
 ans_mat = [
-    ["Cinderella" 0 1 0 1 1 0 0 0 0 1 0];
-    ["Snow White" 0 1 1 1 1 1 0 0 0 1 0];
-    ["Rapunzel" 0 1 0 0 1 0 1 0 0 1 0];
-    ["Jasmine" 0 1 1 1 0 1 0 0 0 1 0];
-    ["Merida" 0 1 0 0 1 0 0 0 0 0 0];
-    ["Slinky" 1 0 0 0 0 1 0 0 1 0 0];
-    ["Jessie" 0 1 0 1 1 0 0 0 1 1 0];
+    ["Cinderella"     0 1 0 1 1 0 0 0 0 1 0];
+    ["Snow_White"     0 1 1 1 1 1 0 0 0 1 0];
+    ["Rapunzel"       0 1 0 0 1 0 1 0 0 1 0];
+    ["Jasmine"        0 1 1 1 0 1 0 0 0 1 0];
+    ["Merida"         0 1 0 0 1 0 0 0 0 0 0];
+    ["Slinky"         1 0 0 0 0 1 0 0 1 0 0];
+    ["Jessie"         0 1 0 1 1 0 0 0 1 1 0];
     ["Buzz_Lightyear" 1 1 0 0 1 0 0 0 0 1 1];
-    ["MrPotatoHead" 1 0 1 1 0 1 0 1 1 0 0];
-    ["Woody" 1 1 1 1 1 1 0 0 0 1 0];
-    ["Vidia" 0 1 1 1 1 0 1 0 1 0 1];
-    ["Iridessa" 0 1 1 1 0 1 1 0 1 0 1];
-    ["Rosetta" 0 1 0 0 1 0 1 0 1 0 1];
-    ["TinkerBell" 0 1 0 0 1 0 1 0 0 1 1];
-    ["Silvermist" 0 1 1 0 1 1 1 0 1 0 1];
-    ["Mirabel" 0 1 1 0 0 1 0 0 0 0 0];
-    ["Isabella" 0 1 1 0 0 1 1 0 1 0 0];
-    ["Bruno" 1 1 1 0 0 1 1 0 1 0 0];
-    ["Luisa" 0 1 1 1 0 1 1 0 1 0 0];
-    ["Abuela" 0 1 0 0 0 1 0 0 0 0 0];
-    ["Anna" 0 1 0 0 1 0 0 0 0 1 0];
-    ["Kristoff" 1 0 0 0 0];
-    ["Hanz" 1 1 0 0 1 0 0 0 1 0 0];
-    ["Olaff" 1 0 1 0 0 1 0 1 1 0 0];
-    ["Elsa" 0 1 0 0 1 0 1 0 0 0 0]
+    ["MrPotatoHead"   1 0 1 1 0 1 0 1 1 0 0];
+    ["Woody"          1 1 1 1 1 1 0 0 0 1 0];
+    ["Vidia"          0 1 1 1 1 0 1 0 1 0 1];
+    ["Iridessa"       0 1 1 1 0 1 1 0 1 0 1];
+    ["Rosetta"        0 1 0 0 1 0 1 0 1 0 1];
+    ["TinkerBell"     0 1 0 0 1 0 1 0 0 1 1];
+    ["Silvermist"     0 1 1 0 1 1 1 0 1 0 1];
+    ["Mirabel"        0 1 1 0 0 1 0 0 0 0 0];
+    ["Isabella"       0 1 1 0 0 1 1 0 1 0 0];
+    ["Bruno"          1 1 1 0 0 1 1 0 1 0 0];
+    ["Luisa"          0 1 1 1 0 1 1 0 1 0 0];
+    ["Abuela"         0 1 0 0 0 1 0 0 0 0 0];
+    ["Anna"           0 1 0 0 1 0 0 0 0 1 0];
+    ["Kristoff"       1 1 0 0 0 0 1 0 0 1 0];
+    ["Hanz"           1 1 0 0 1 0 0 0 1 0 0];
+    ["Olaff"          1 0 1 0 0 1 0 1 1 0 0];
+    ["Elsa"           0 1 0 0 1 0 1 0 0 0 0]
 ];
 
+
+% Keep displaying the question list and let the player ask until the player
+% submits their answer.
 a = 1;
 while a > 0
     disp('1. Is your character a male?')
@@ -43,67 +51,39 @@ while a > 0
     disp('10. Does your character have a prominent love interest?')
     disp('11. Does your character have wings?')
     disp('Or type 12 to submit your final answer.')
-    
+
+% Let the player enter a question number and the computer will answer yes
+% or no.
     prompt = 'Choose a question by typing the number\n';
     PlayersChoice = input(prompt);
-    
-%   PSUDOCODE:
-%   if PlayersChoice ~= 12
-%         judge(ans_mat(index, PlayersChoice+1))
-%     else
-%         ...
-%     end
+ 
 
-% CHANGE THIS ENTIRE PART TO THE PSUDOCODE ABOVE
-    if PlayersChoice == 1
-            judge(ans_mat(index, 2));
-    elseif PlayersChoice == 2
-            ComputersAnswer = two;
-            disp(ComputersAnswer)
-    elseif PlayersChoice == 3
-            judge(ans_mat(index, 4));
-    elseif PlayersChoice == 4
-            ComputersAnswer = four;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 5
-            ComputersAnswer = five;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 6
-            ComputersAnswer = six;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 7
-            ComputersAnswer = seven;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 8
-            ComputersAnswer = eight;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 9
-            ComputersAnswer = nine;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 10
-            ComputersAnswer = ten;
-            disp(ComputersAnswer);
-    elseif PlayersChoice == 11
-            ComputersAnswer = eleven;
-            disp(ComputersAnswer);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% If player asks a question from 1 to 11, the computer will find the
+% corresponding index of the character of choice and return an answer.
+    if PlayersChoice >=1 && PlayersChoice <=11
+        judge(ans_mat(index, PlayersChoice+1))
+% end the question display if player submits the answer, and tells player
+% if their choices were correct.
     elseif PlayersChoice == 12
         FinalAnswer = final(app);
         a = -1;
         app.delete()
-        if FinalAnswer == ""
-            disp("You are incorrect, I WON!")
-        elseif FinalAnswer == ans_mat(index, 1)
+        if FinalAnswer == ans_mat(index, 1)
             disp("Congratuliations, YOU WON!")
         else
             disp("You are incorrect, I WON!")
         end
-    
+% if player enters a number that not from 1 to 12, direct back to the
+% question display.
+    else
+        disp('Please type a number from 1 to 12.')
     end
     pause(2)
 end
 
 
+% Get the player's final choice and put it to the if-loop above
 function choice = final(app)
     cnt = 0;
     if app.Cinderella.BackgroundColor == [0.9216 0.5804 0.6392]
@@ -114,18 +94,118 @@ function choice = final(app)
         choice = "Snow_White";
         cnt = cnt+1;
     end
+    if app.Rapunzel.BackgroundColor == [0.9216 0.5804 0.6392]
+        choice = "Rapunzel";
+        cnt = cnt+1;
+    end
+    if app.Jasmine.BackgroundColor == [0.9216 0.5804 0.6392]
+        choice = "Jasmine";
+        cnt = cnt+1;
+    end
+    if app.Merida.BackgroundColor == [0.9216 0.5804 0.6392]
+        choice = "Merida";
+        cnt = cnt+1;
+    end
+
+    if app.Slinky.BackgroundColor == [0.1804 0.3294 0.5686]
+        choice = "Slinky";
+        cnt = cnt+1;
+    end
+    if app.Jessie.BackgroundColor == [0.1804 0.3294 0.5686]
+        choice = "Jessie";
+        cnt = cnt+1;
+    end
+    if app.Buzz_Lightyear.BackgroundColor == [0.1804 0.3294 0.5686]
+        choice = "Buzz_Lightyear";
+        cnt = cnt+1;
+    end
+    if app.MrPotatoHead.BackgroundColor == [0.1804 0.3294 0.5686]
+        choice = "MrPotatoHead";
+        cnt = cnt+1;
+    end
+    if app.Woody.BackgroundColor == [0.1804 0.3294 0.5686]
+        choice = "Woody";
+        cnt = cnt+1;
+    end
+
+    if app.Videa.BackgroundColor == [0.2314 0.5804 0.2784]
+        choice = "Videa";
+        cnt = cnt+1;
+    end
+    if app.Iridessa.BackgroundColor == [0.2314 0.5804 0.2784]
+        choice = "Iridessa";
+        cnt = cnt+1;
+    end
+    if app.Rosetta.BackgroundColor == [0.2314 0.5804 0.2784]
+        choice = "Rosetta";
+        cnt = cnt+1;
+    end
+    if app.TinkerBell.BackgroundColor == [0.2314 0.5804 0.2784]
+        choice = "TinkerBell";
+        cnt = cnt+1;
+    end
+    if app.Silvermist.BackgroundColor == [0.2314 0.5804 0.2784]
+        choice = "Silvermist";
+        cnt = cnt+1;
+    end
+
+    if app.Mirabel.BackgroundColor == [0.6118 0.0392 0.0392]
+        choice = "Mirabel";
+        cnt = cnt+1;
+    end
+    if app.Isabella.BackgroundColor == [0.6118 0.0392 0.0392]
+        choice = "Isabella";
+        cnt = cnt+1;
+    end
+    if app.Bruno.BackgroundColor == [0.6118 0.0392 0.0392]
+        choice = "Bruno";
+        cnt = cnt+1;
+    end
+    if app.Luisa.BackgroundColor == [0.6118 0.0392 0.0392]
+        choice = "Luisa";
+        cnt = cnt+1;
+    end
+    if app.Abuela.BackgroundColor == [0.6118 0.0392 0.0392]
+        choice = "Abuela";
+        cnt = cnt+1;
+    end
+
+    if app.Anna.BackgroundColor == [0.1216 0.7882 1]
+        choice = "Anna";
+        cnt = cnt+1;
+    end
+    if app.Kristoff.BackgroundColor == [0.1216 0.7882 1]
+        choice = "Kristoff";
+        cnt = cnt+1;
+    end
+    if app.Hanz.BackgroundColor == [0.1216 0.7882 1]
+        choice = "Hanz";
+        cnt = cnt+1;
+    end
+    if app.Olaff.BackgroundColor == [0.1216 0.7882 1]
+        choice = "Olaff";
+        cnt = cnt+1;
+    end
+    if app.Elsa.BackgroundColor == [0.1216 0.7882 1]
+        choice = "Elsa";
+        cnt = cnt+1;
+    end
+
+% if player leaves more than 1 character on the screen, their answer is
+% incorrect.
     if cnt ~= 1
         choice = "";
     end
 end
 
+
+% This function is used in the  'Players Choice if-loop'  in line 65.
+% It takes an input 'i' and returns Yes if the corresponding index is 1 and
+% otherwise No.
 function judge(i)
     if i == "1"
-        disp("Yes")
+        disp("Yes");
     else
-        disp("No")
+        disp("No");
     end
 end
-
-
-
