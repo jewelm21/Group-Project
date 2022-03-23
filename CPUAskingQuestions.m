@@ -174,8 +174,7 @@ classdef CPUAskingQuestions < handle
 %         gw(2,5)=0;
 %         gw(3,1:4)=0;
 %         gw(4,1)=0;
-%         gw(4,3)=0;
-%         gw(4,5)=0;
+%         gw(4,4:5)=0;
 %         gw(5,3:5)=0;
 %     else
 %             %True version goes here
