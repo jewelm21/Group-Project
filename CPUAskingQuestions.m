@@ -84,6 +84,12 @@ elseif x==2
             gw(2,3:4)=0;
             gw(3:4,:)=0;
             gw(5,1:4)=0;
+        elseif (human==true)
+        gw(1,:)=0;
+        gw(2,1)=0;
+        gw(2,3:4)=0;
+        gw(3:4,:)=0;
+        gw(5,1:4)=0;
         end
 elseif x==3
     disp('Please answer using "true" or "false".')
