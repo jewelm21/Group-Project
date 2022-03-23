@@ -121,7 +121,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
                 app.Buzz_Lightyear.Icon = '';
             else
                 app.Buzz_Lightyear.BackgroundColor = [0.1804 0.3294 0.5686];
-                app.Buzz_Lightyear.Icon = 'BuzzEdit2.png.png';
+                app.Buzz_Lightyear.Icon = 'BuzzEdit2.png';
             end
         end
 
