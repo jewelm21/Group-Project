@@ -22,3 +22,6 @@ Notes:
     a) The computer finds your character before you find its.
     b) You have 0 or more than 1 character left in your window when you submit.
     c) Your answer is incorrect.
+
+
+Link to Work Log: https://docs.google.com/document/d/184wdYhUtRxQ5AFnGbl8sLfotnSDLsFAuD7_rsWjiD9A/edit?usp=sharing
