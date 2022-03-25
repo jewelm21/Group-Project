@@ -25,3 +25,6 @@ Notes:
 
 
 Link to Work Log: https://docs.google.com/document/d/184wdYhUtRxQ5AFnGbl8sLfotnSDLsFAuD7_rsWjiD9A/edit?usp=sharing
+Link to excel sheet with the character characteristics: https://docs.google.com/spreadsheets/d/1caxyC5O6BLrLu6xV6K0gvwU3K2CsWaMEYG_tVnHSiBY/edit?usp=sharing
+Link to picture citations: https://docs.google.com/document/d/18l30dtNsI62KCVCM17TTGp-To7JMls-KFONi7OzJXwU/edit?usp=sharing
+- Pictures were edited from these sources

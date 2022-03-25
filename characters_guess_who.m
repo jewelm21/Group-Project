@@ -1,3 +1,6 @@
+%%Draft of CPU asking questions 
+
+
 function gw = characters(male, human, dark_hair, head_piece, caucasian, ...
     dark_eyes, powers, comedy, side_character, love_interest, wings)
 male=false;

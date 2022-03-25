@@ -1,3 +1,5 @@
+%%Draft of CPU asking questions 
+
 gw = ones(5);
 if (male==true) 
     gw(1,:)= 0;

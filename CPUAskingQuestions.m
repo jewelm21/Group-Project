@@ -76,7 +76,13 @@ classdef CPUAskingQuestions < handle
             end
         end
     end
-% end
+
+
+    
+%%Rough Draft Code/ Test Code
+    
+
+
 % elseif x==2
 %     disp('Please answer using "true" or "false".')
 %     human = input(human);
