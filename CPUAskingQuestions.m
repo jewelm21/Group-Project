@@ -1,5 +1,8 @@
+% create a class and initiate it to be used later.
 classdef CPUAskingQuestions < handle
     properties (Access = public)
+        % similar to what I did in PlayerAskingQuestions.m, create a matrix
+        % of character properties.
         gw = [
             ["Cinderella"     0 1 0 1 1 0 0 0 0 1 0];
             ["Snow_White"     0 1 1 1 1 1 0 0 0 1 0];
@@ -61,6 +64,7 @@ classdef CPUAskingQuestions < handle
             computer.questions(x) = [];
         end
 
+        % Let the computer decide if it found the answer.
         function num = check(computer)
             index_of_1 = find(computer.ans_vec == 1);
             num = length(index_of_1);
