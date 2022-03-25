@@ -10,20 +10,12 @@ while n>0
         clear
         return
     end
-    computer.ask(computer);             %these two scripts will run one after the other to 
-                                % simulate the player asking a question to the
-                                % computer followed by the computer asking a question to
-                                % the player
+    computer.ask(computer);          
                     
     pause(2);
 
-% this code is for the computer to guess the players character
+% this code is for the computer to guess/check the players character
     if computer.check(computer) == 1
-%         [r,c]=find(gw);             %it will find the row and column of the last number 1 left
-%         CharacterPosition = r*c;    %the row and column are multiplied to give the corresponding 1-25 number
-%         Computers_Final_Answer = ans_mat(CharacterPosition, 1); %extracts the character from 'PlayerAskingQuestions'
-%         disp('Your Character is'); disp(Computers_Final_Answer); % displays the answer
-        clear
-        return                                                  %ends the entire code
+        return                    %ends the entire code when conditions are met
     end
 end

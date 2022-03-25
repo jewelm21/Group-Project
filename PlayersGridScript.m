@@ -44,7 +44,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
                app.Cinderella.Icon = '';
             else
                app.Cinderella.BackgroundColor = [0.9216 0.5804 0.6392];
-               app.Cinderella.Icon = 'Cinderellanum3.png';
+               app.Cinderella.Icon = 'CinderellaNumEdit.png';
             end
         end
 
@@ -110,7 +110,7 @@ classdef PlayersGridScript < matlab.apps.AppBase
                 app.Jessie.Icon = '';
             else
                 app.Jessie.BackgroundColor = [0.1804 0.3294 0.5686];
-                app.Jessie.Icon = 'Jessienum3.png';
+                app.Jessie.Icon = 'JessieNumEdit.png';
             end
         end
 
@@ -529,7 +529,9 @@ classdef PlayersGridScript < matlab.apps.AppBase
             % Create Image
             app.Image = uiimage(app.Characters);
             app.Image.Position = [851 211 223 207];
+            
 
+           %Allows player to choose a character to display on their grid
             disp('1. Cinderella')
             disp('2. Snow White')
             disp('3. Rapunzel')
